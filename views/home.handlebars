@@ -1,0 +1,22 @@
+
+<h2>I am the Home Handlebars</h2>
+
+<ul>
+    {{#each university as |xValue xKey|  }}
+
+        {{#each xValue.students as |yValue yKey| }}
+            <li> {{ yValue }} </li>
+        {{/each}}
+
+        <hr>
+        
+
+    {{/each}}
+</ul>
+
+<p>{{calculate 20}}</p>
+
+
+{{#list society}}
+    {{firstName}} {{lastName}}
+{{/list}}
