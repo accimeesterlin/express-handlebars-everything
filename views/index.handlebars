@@ -1,0 +1,23 @@
+<h1>{{ title }}</h1>
+
+<p>Welcome to my App</p>
+{{> header }}
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure dolores quidem eos explicabo voluptatibus aspernatur ipsum,
+    iste, illum facilis consequuntur illo a magnam temporibus commodi neque similique dicta. Obcaecati?</p>
+
+<ul>
+    <li>Mango</li>
+    <li>Pineapple</li>
+    <li>Orange</li>
+</ul>
+
+<p>I am {{age}} years old</p>
+
+{{#with address}}
+    <p>My address is {{street}}</p>
+    <p>Zipcode: {{zipcode}}</p>
+    <p>My city: {{city}}</p>
+{{/with}}
+
+{{> footer }}
